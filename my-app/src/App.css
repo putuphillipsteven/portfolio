@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik+Mono+One&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*=col-] {
+  float: left;
+  padding: 1rem;
+  width: 100%;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+p,
+li,
+button,
+a {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.75rem;
+}
+
+body,
+nav,
+ul,
+.navlist,
+.container,
+.linkList,
+.toggleMenu,
+.recent-work-container,
+.socmed-item {
+  display: flex;
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(75deg, #d3d3d3, #515d61);
+  flex-direction: column;
+  align-items: center;
+}
+body nav {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  -webkit-backdrop-filter: blur(0.3rem);
+          backdrop-filter: blur(0.3rem);
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  z-index: 2;
+}
+body nav .navlist {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body nav .navlist .toggleMenu {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+body nav .navlist .linkList {
+  width: 100%;
+}
+body nav .navlist .linkList ul {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+body nav .navlist .linkList ul li {
+  list-style: none;
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+body .container-child {
+  margin: 1rem 0;
+}
+body .container-header {
+  margin-bottom: 0;
+}
+body .container.jumbotron {
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+body .container.jumbotron > div {
+  margin: 1rem 0;
+}
+body .container.about-me {
+  flex-direction: column;
+  text-align: center;
+  min-height: 10rem;
+  justify-content: space-between;
+}
+body .container.about-me .paragraph {
+  margin-top: 0;
+}
+body .container.about-me ul {
+  flex-direction: column;
+}
+body .container.about-me ul li {
+  list-style: none;
+  margin: 0.2rem 0;
+}
+body .container.recent-work {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .container.recent-work .recent-work-container {
+  width: 100%;
+  min-height: 10rem;
+  flex-direction: column;
+  align-items: center;
+}
+body .container.recent-work .recent-work-container .recent-work-child {
+  width: 80%;
+  height: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+body .container.recent-work .recent-work-container .recent-work-child img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: scale(1.05);
+}
+body .container.recent-work .recent-work-container .recent-work-child:first-child {
+  margin-top: 0;
+}
+body .container.footer {
+  text-align: center;
+  flex-direction: column;
+}
+body .container.footer .socmed-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+body .container.footer .socmed-container .socmed-item {
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+}
+body button {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  border: 0;
+  outline: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}/*# sourceMappingURL=App.css.map */
