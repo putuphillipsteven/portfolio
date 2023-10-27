@@ -1,6 +1,6 @@
 function AboutMe() {
   return (
-    <div className="col-6 container about-me">
+    <div className="col-12 container about-me" id="AboutMe">
       <div className="about-me-header container-child">
         <h2>HI, NICE TO MEET YOU</h2>
       </div>

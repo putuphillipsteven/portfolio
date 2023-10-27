@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import calculator from "../../img/png/calculator.png";
 import FAQ from "../../img/png/FAQ.png";
 import interactiverating from "../../img/png/interactive-rating.png";
 
 function RecentWork() {
   return (
-    <div className="col-6 container recent-work">
+    <div className="col-12 container recent-work" id="RecentWork">
       <div className="recent-work-header container-header container-child">
         <h2>My Recent Work</h2>
       </div>
@@ -13,13 +14,31 @@ function RecentWork() {
       </div>
       <div className="recent-work-container container-child">
         <div className="recent-work-child">
-          <img src={calculator} alt="calculator" />
+          <img
+            src={calculator}
+            alt="calculator"
+            onClick={() =>
+              window.open("https://phillip-steven.github.io/calculator")
+            }
+          />
         </div>
         <div className="recent-work-child">
-          <img src={FAQ} alt="FAQ" />
+          <img
+            src={FAQ}
+            alt="FAQ"
+            onClick={() =>
+              window.open("https://phillip-steven.github.io/faq-accordion-card")
+            }
+          />
         </div>
         <div className="recent-work-child">
-          <img src={interactiverating} alt="calculator" />
+          <img
+            src={interactiverating}
+            alt="calculator"
+            onClick={() =>
+              window.open("https://phillip-steven.github.io/interactive-rating")
+            }
+          />
         </div>
       </div>
     </div>

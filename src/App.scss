@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik+Mono+One&display=swap");
+$main-font: "Rubik Mono One", sans-serif;
+$secondary-font: "Roboto Mono", monospace;
+$whitesmoke: #d3d3d3;
+$gray: #515d61;
+$gray-transparent: hsla(0, 0%, 100%, 0.3);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 1rem;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $main-font;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1rem;
+}
+h3 {
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+p,
+li,
+button,
+a {
+  font-family: $secondary-font;
+  font-size: 0.75rem;
+}
+
+body,
+nav,
+ul,
+.navlist,
+.container,
+.linkList,
+.toggleMenu,
+.recent-work-container,
+.socmed-item,
+#root {
+  display: flex;
+}
+
+#root {
+  max-width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(75deg, $whitesmoke, $gray);
+}
+nav {
+  background-color: $gray-transparent;
+  backdrop-filter: blur(0.3rem);
+  width: 20%;
+  min-height: 2rem;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  padding: 0.5rem 0.2rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  z-index: 2;
+  .Link {
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .toggleMenu {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .linkList {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+    text-align: center;
+  }
+  .linkList.expanded {
+    display: block;
+    display: flex;
+  }
+}
+.container-child {
+  margin: 1rem 0;
+}
+
+.container.jumbotron {
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  a {
+    margin-top: 1rem;
+  }
+}
+
+.container.about-me {
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  .paragraph {
+    margin-top: 0;
+    p {
+      text-align: center;
+    }
+  }
+  ul {
+    flex-direction: column;
+    li {
+      list-style: none;
+      margin: 0.2rem 0;
+    }
+  }
+}
+.container.recent-work {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  .recent-work-container {
+    width: 80%;
+    min-height: 10rem;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    grid-gap: 0.5rem;
+    .recent-work-child {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        transform: scale(1.05);
+      }
+    }
+    .recent-work-child:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.container.footer {
+  text-align: center;
+  flex-direction: column;
+  .socmed-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    .socmed-item {
+      font-size: 2rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.5rem;
+      padding: 0.15rem 0;
+      cursor: pointer;
+    }
+  }
+}
+a {
+  padding: 0.5rem 1rem;
+  background-color: $gray-transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  p,
+  a,
+  button,
+  li {
+    font-size: 1rem;
+  }
+
+  body {
+    nav {
+      width: 70%;
+      .toggleMenu {
+        display: none;
+      }
+    }
+    .linkList {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .container.about-me {
+      align-items: center;
+      justify-content: center;
+      .about-me-body {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10rem;
+      }
+    }
+    .container.recent-work {
+      .recent-work-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 1rem;
+        .recent-work-child {
+          Link {
+            display: none;
+          }
+          img {
+            transform: scale(1.01);
+            object-fit: cover;
+          }
+        }
+        .recent-work-child:nth-child(2) {
+          img {
+            transform: scale(1.1);
+          }
+        }
+        .recent-work-child:last-child {
+          img {
+            transform: scale(1.12);
+          }
+        }
+      }
+    }
+    .container.footer {
+      .socmed-container {
+        grid-template-columns: repeat(3, 4rem);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
