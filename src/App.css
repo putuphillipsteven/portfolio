@@ -15,7 +15,7 @@
 
 [class*=col-] {
   float: left;
-  padding: 1rem;
+  padding: 1em;
 }
 
 html {
@@ -33,15 +33,15 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 h3 {
-  font-size: 0.75rem;
+  font-size: 0.75em;
   font-weight: 300;
 }
 
@@ -50,7 +50,7 @@ li,
 button,
 a {
   font-family: "Roboto Mono", monospace;
-  font-size: 0.75rem;
+  font-size: 0.75em;
 }
 
 body,
@@ -77,19 +77,19 @@ ul,
 
 nav {
   background-color: hsla(0, 0%, 100%, 0.3);
-  -webkit-backdrop-filter: blur(0.3rem);
-          backdrop-filter: blur(0.3rem);
+  -webkit-backdrop-filter: blur(0.3em);
+          backdrop-filter: blur(0.3em);
   width: 20%;
-  min-height: 2rem;
+  min-height: 2em;
   align-items: center;
   justify-content: center;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
   top: 0;
-  padding: 0.5rem 0.2rem;
-  margin-top: 1rem;
-  border-radius: 0.5rem;
+  padding: 0.5em 0.2em;
+  margin-top: 1em;
+  border-radius: 0.5em;
   flex-direction: column;
   z-index: 2;
 }
@@ -118,7 +118,7 @@ nav .linkList.expanded {
 }
 
 .container-child {
-  margin: 1rem 0;
+  margin: 1em 0;
 }
 
 .container.jumbotron {
@@ -130,7 +130,7 @@ nav .linkList.expanded {
   text-align: center;
 }
 .container.jumbotron a {
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 
 .container.about-me {
@@ -149,7 +149,7 @@ nav .linkList.expanded {
 }
 .container.about-me ul li {
   list-style: none;
-  margin: 0.2rem 0;
+  margin: 0.2em 0;
 }
 
 .container.recent-work {
@@ -159,18 +159,18 @@ nav .linkList.expanded {
 }
 .container.recent-work .recent-work-container {
   width: 80%;
-  min-height: 10rem;
+  min-height: 10em;
   flex-direction: column;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
   justify-content: center;
-  grid-gap: 0.5rem;
+  grid-gap: 0.5em;
 }
 .container.recent-work .recent-work-container .recent-work-child {
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
+  border-radius: 1em;
   overflow: hidden;
 }
 .container.recent-work .recent-work-container .recent-work-child img {
@@ -191,23 +191,23 @@ nav .linkList.expanded {
 .container.footer .socmed-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.5rem;
+  grid-gap: 0.5em;
   align-items: center;
   justify-content: center;
 }
 .container.footer .socmed-container .socmed-item {
-  font-size: 2rem;
+  font-size: 2em;
   align-items: center;
   justify-content: center;
-  border-radius: 0.5rem;
-  padding: 0.15rem 0;
+  border-radius: 0.5em;
+  padding: 0.15em 0;
   cursor: pointer;
 }
 
 a {
-  padding: 0.5rem 1rem;
+  padding: 0.5em 1em;
   background-color: hsla(0, 0%, 100%, 0.3);
-  border-radius: 0.5rem;
+  border-radius: 0.5em;
   cursor: pointer;
   text-decoration: none;
   color: black;
@@ -255,19 +255,19 @@ a {
     width: 100%;
   }
   h1 {
-    font-size: 4rem;
+    font-size: 4em;
   }
   h2 {
-    font-size: 3rem;
+    font-size: 3em;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 2em;
   }
   p,
   a,
   button,
   li {
-    font-size: 1rem;
+    font-size: 1em;
   }
   body nav {
     width: 70%;
@@ -289,7 +289,7 @@ a {
   body .container.about-me .about-me-body {
     flex-direction: column;
     align-items: center;
-    padding: 0 10rem;
+    padding: 0 10em;
   }
   body .container.recent-work .recent-work-container {
     display: grid;
@@ -297,7 +297,7 @@ a {
     grid-template-rows: auto;
     align-items: center;
     justify-content: center;
-    grid-gap: 1rem;
+    grid-gap: 1em;
   }
   body .container.recent-work .recent-work-container .recent-work-child Link {
     display: none;
@@ -314,6 +314,6 @@ a {
     transform: scale(1.12);
   }
   body .container.footer .socmed-container {
-    grid-template-columns: repeat(3, 4rem);
+    grid-template-columns: repeat(3, 4em);
   }
 }/*# sourceMappingURL=App.css.map */
