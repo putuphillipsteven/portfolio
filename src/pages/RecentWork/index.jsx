@@ -18,7 +18,7 @@ function RecentWork() {
             src={calculator}
             alt="calculator"
             onClick={() =>
-              window.open("https://phillip-steven.github.io/calculator")
+              window.open("https://putuphillipsteven.github.io/calculator")
             }
           />
         </div>
@@ -27,7 +27,9 @@ function RecentWork() {
             src={FAQ}
             alt="FAQ"
             onClick={() =>
-              window.open("https://phillip-steven.github.io/faq-accordion-card")
+              window.open(
+                "https://putuphillipsteven.github.io/faq-accordion-card"
+              )
             }
           />
         </div>
@@ -36,7 +38,9 @@ function RecentWork() {
             src={interactiverating}
             alt="calculator"
             onClick={() =>
-              window.open("https://phillip-steven.github.io/interactive-rating")
+              window.open(
+                "https://putuphillipsteven.github.io/interactive-rating"
+              )
             }
           />
         </div>
