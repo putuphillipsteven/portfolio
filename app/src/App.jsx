@@ -1,28 +1,32 @@
-import { useState } from 'react';
-import { Home } from './pages/home/container';
+import { Link, Outlet } from 'react-router-dom';
 
 export const App = () => {
 	return (
-		<div className='p-4 font-mono  max-w-screen h-screen'>
-			<div className='p-2 border-2 border-black  max-w-full min-h-full grid gap-y-2 grid-rows-[12%_auto] grid-cols-1 content-stretch bg-gray-100 '>
-				<div className='p-2 max-h-full flex flex-col justify-between overflow-hidden'>
-					<h2 className='text-3xl font-medium'>I Putu Phillip Steven</h2>
-					<p>Web Developer</p>
+		<div className='p-8 font-mono  max-w-screen h-screen'>
+			<div className='p-4 shadow-lg  max-w-full min-h-full grid gap-y-2 grid-rows-[15%_auto] grid-cols-1 content-stretch bg-gradient-to-tr from-gray-300 to-gray-200 rounded-md'>
+				<div className='p-2 max-h-full flex flex-col justify-normal overflow-hidden'>
+					<h2 className='text-3xl font-bold'>I Putu Phillip Steven</h2>
+					<p className='text-sm'>Web Developer</p>
 				</div>
 				<div className='p-2 flex justify-between gap-x-2'>
-					<div className=' w-4/12'>
-						<ul>
-							<li>Home</li>
-							<li>About</li>
-							<li>Skills</li>
-							<li>Project</li>
-							<li>Contact Me</li>
+					<div className='w-3/12 '>
+						<ul className='flex flex-col gap-y-4'>
+							<li>
+								<Link to={'/'}>Home</Link>
+							</li>
+							<li>
+								<Link to={`/skills`}>Skills</Link>
+							</li>
+							<li>
+								<Link to={`/project`}>Project</Link>
+							</li>
+							<li>
+								<Link to={`/contact`}>Contact Me</Link>
+							</li>
 						</ul>
 					</div>
-					<div className=' w-8/12'>
-						<ul>
-							<li>Content</li>
-						</ul>
+					<div className='w-9/12'>
+						<Outlet />
 					</div>
 				</div>
 			</div>
