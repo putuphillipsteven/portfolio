@@ -2,8 +2,8 @@ import { Fragment } from 'react';
 
 export const Home = () => {
 	return (
-		<div className=' flex flex-row-reverse'>
-			<p className='text-justify w-8/12 font-semibold'>
+		<div className=' flex flex-row-reverse h-full'>
+			<p className='text-justify w-9/12 font-semibold self-end'>
 				I am a graduate in automation engineering from State Polytechnic of Bali, graduated in
 				November 2021. Interested in pursuing and looking for opportunities in web development role.
 				Certified in front and back end development. Skilled in HTML, CSS, Javascript, Node, React,

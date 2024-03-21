@@ -6,7 +6,12 @@ export const App = () => {
 	const linkedListElement = linkedList.map((link) => {
 		return (
 			<li>
-				<NavLink to={`${link === 'home' ? `/` : `/${link}`}`} className='hover:font-bold'>
+				<NavLink
+					to={`${link === 'home' ? `/` : `/${link}`}`}
+					className={({ isActive, isPending }) =>
+						isPending ? 'pending' : isActive ? 'active' : 'hover:font-bold'
+					}
+				>
 					{({ isActive }) =>
 						isActive ? (
 							<div className='flex items-center gap-x-1'>
@@ -23,9 +28,9 @@ export const App = () => {
 	});
 
 	return (
-		<div className='p-8 font-mono  max-w-screen h-screen'>
-			<div className='p-2 shadow-lg  max-w-full min-h-full grid gap-y-2 grid-rows-[15%_auto] grid-cols-1 content-stretch bg-gradient-to-b from-gray-200 to-gray-100 rounded-md'>
-				<div className='p-2 max-h-full flex flex-col justify-normal overflow-hidden'>
+		<div className='p-8  max-w-screen h-screen'>
+			<div className='p-2 shadow-lg  max-w-full min-h-full grid gap-y-2 grid-rows-[min-content_auto] grid-cols-1 content-stretch bg-gradient-to-b from-gray-200 to-gray-100 rounded-md'>
+				<div className='p-2 max-h-full flex flex-col justify-between overflow-hidden h-fit'>
 					<h2 className='text-3xl font-bold'>I Putu Phillip Steven</h2>
 					<p className='text-sm font-semibold'>Web Developer</p>
 				</div>
