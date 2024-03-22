@@ -2,7 +2,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 import { GoDotFill } from 'react-icons/go';
 import capitalize from 'capitalize';
 export const App = () => {
-	const linkedList = ['home', 'skills', 'project', 'contact'];
+	const linkedList = ['home', 'skills', 'works', 'contact'];
 	const linkedListElement = linkedList.map((link) => {
 		return (
 			<li>

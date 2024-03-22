@@ -14,8 +14,8 @@ export const Skills = () => {
 			);
 		});
 		return (
-			<div className='p-1 flex flex-col gap-y-2 self-end' key={skill?.name}>
-				<h2 className='text-md border-black border-b-2 font-bold'>{skill?.name}</h2>
+			<div className='p-1 flex flex-col gap-y-2 self-end items-end' key={skill?.name}>
+				<h2 className='text-sm border-black border-b-2 font-bold '>{skill?.name}</h2>
 				<ul className='flex flex-col items-end'>{renderedListOfSkills}</ul>
 			</div>
 		);
