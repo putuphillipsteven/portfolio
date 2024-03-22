@@ -29,10 +29,10 @@ export const App = () => {
 
 	return (
 		<div className='p-8 max-w-screen h-screen overflow-hidden'>
-			<div className='p-2 shadow-lg  max-w-full h-full grid gap-y-2 grid-rows-[min-content_auto] grid-cols-1 content-stretch bg-gradient-to-b from-gray-200 to-gray-100 rounded-md overflow-hidden'>
+			<div className='p-2 shadow-lg  max-w-full h-full grid gap-y-2 grid-rows-[min-content_auto] grid-cols-1 content-stretch bg-gradient-to-b from-gray-200 to-gray-100 overflow-hidden'>
 				<div className='p-2 flex flex-col justify-between overflow-hidden h-fit'>
-					<h2 className='text-3xl font-bold'>I Putu Phillip Steven</h2>
-					<p className='text-sm font-semibold'>Web Developer</p>
+					<h2 className='text-xl font-bold w-fit md:text-4xl'>I Putu Phillip Steven</h2>
+					<p className='md:text-xl'>Web Developer</p>
 				</div>
 				<div className='p-2 flex justify-between  gap-x-2'>
 					<div className='w-3/12 '>

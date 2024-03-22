@@ -10,21 +10,14 @@ import {
 import { App } from './App';
 import { Home } from './pages/home/container';
 import { ErrorPages } from './pages/error-pages/container';
+import { Skills } from './pages/skills/container';
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route path='/' element={<App />} errorElement={<ErrorPages />}>
 			<Route errorElement={<ErrorPages />}>
 				<Route index element={<Home />} errorElement={<ErrorPages />} />
-				<Route
-					path='/skills'
-					element={
-						<>
-							<p>Skills</p>
-						</>
-					}
-					errorElement={<ErrorPages />}
-				/>
+				<Route path='/skills' element={<Skills />} errorElement={<ErrorPages />} />
 			</Route>
 		</Route>,
 	),

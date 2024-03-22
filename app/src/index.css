@@ -19,11 +19,11 @@
 	h5,
 	h6,
 	h7 {
-		@apply font-space-mono;
+		@apply font-space-mono w-fit;
 	}
 
 	p,
 	li {
-		@apply font-dm-sans;
+		@apply font-dm-sans w-fit  text-sm sm:text-lg;
 	}
 }
