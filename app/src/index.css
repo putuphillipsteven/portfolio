@@ -6,6 +6,9 @@
 	.active {
 		@apply font-bold;
 	}
+	.no-scrollbar::-webkit-scrollbar {
+		@apply hidden;
+	}
 }
 
 @layer base {
