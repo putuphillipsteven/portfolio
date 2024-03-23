@@ -4,7 +4,6 @@ export const Skills = () => {
 		{ name: 'Back End', listOfSkills: ['MySQL', 'Node.Js', 'Express.Js'] },
 		{ name: 'Tools', listOfSkills: ['Git', 'VSCode'] },
 	];
-	console.log(skills);
 	const renderedSkills = skills?.map((skill) => {
 		const renderedListOfSkills = skill?.listOfSkills?.map((listOfSkill) => {
 			return (
@@ -15,7 +14,7 @@ export const Skills = () => {
 		});
 		return (
 			<div className='p-1 flex flex-col gap-y-2 self-end items-end' key={skill?.name}>
-				<h2 className='text-sm border-black border-b-2 font-bold '>{skill?.name}</h2>
+				<h2 className='text-sm sm:text-lg border-black border-b-2 font-bold '>{skill?.name}</h2>
 				<ul className='flex flex-col items-end'>{renderedListOfSkills}</ul>
 			</div>
 		);
