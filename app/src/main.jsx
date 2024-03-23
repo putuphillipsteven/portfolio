@@ -6,6 +6,7 @@ import {
 	createBrowserRouter,
 	Route,
 	RouterProvider,
+	BrowserRouter,
 } from 'react-router-dom';
 import { App } from './App';
 import { Home } from './pages/home/container';
@@ -27,4 +28,8 @@ const router = createBrowserRouter(
 	),
 );
 
-ReactDOM.createRoot(document.getElementById('root')).render(<RouterProvider router={router} />);
+ReactDOM.createRoot(document.getElementById('root')).render(
+	<>
+		<RouterProvider router={router} />
+	</>,
+);
