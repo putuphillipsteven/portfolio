@@ -4,22 +4,18 @@ import { MdArrowOutward } from 'react-icons/md';
 const works = [
 	{
 		name: 'Pure Multiwarehouse E-Commerce',
-		description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt eveniet
-						sapiente nostrum animi nam expedita doloremque fugiat exercitationem obcaecati?`,
+		description: `A web app for companies like Uniqlo that has many warehouse.`,
 		link: `https://github.com/purwadhikafullstack/JCWD021001`,
 		imageLink: `https://lh3.googleusercontent.com/d/1YeFUJClIoVNvnWUAtmSLYe9dhuXYamw_=w1000?authuser=0`,
 	},
 	{
 		name: 'Circle-K POS',
-		description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt eveniet
-		sapiente nostrum animi nam expedita doloremque fugiat exercitationem obcaecati?`,
-		link: `https://github.com/wllmsawi/PSS-FE`,
+		description: `Point Of Sales web app that similar to the Circle-K design`,
 		imageLink: `https://lh3.googleusercontent.com/d/1Ua4UMcuSx7m-Zso49I00Mg-nWRcuiEIz=w1000?authuser=0`,
 	},
 	{
 		name: 'Calculator',
-		description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt eveniet
-						sapiente nostrum animi nam expedita doloremque fugiat exercitationem obcaecati?`,
+		description: `Simple calculator app`,
 		link: `https://putuphillipsteven.github.io/calculator/`,
 		imageLink: `https://lh3.googleusercontent.com/d/1QJCZelGz5PDW9UZM58UVEJkglZkjLUnq=w1000?authuser=0`,
 	},
@@ -47,7 +43,7 @@ export const Works = () => {
 	});
 	return (
 		<div className='flex flex-row-reverse h-full b overflow-hidden'>
-			<div className='self-end w-full sm:w-8/12 max-h-[30em]  overflow-y-auto no-scrollbar flex flex-col gap-y-4'>
+			<div className='self-end w-full sm:w-8/12 max-h-[25em] overflow-y-auto no-scrollbar flex flex-col gap-y-4'>
 				{renderedWorks}
 			</div>
 		</div>
