@@ -11,7 +11,7 @@ import { App } from './App';
 import { Home } from './pages/home/container';
 import { ErrorPages } from './pages/error-pages/container';
 import { Skills } from './pages/skills/container';
-import { Projects } from './pages/projects/container';
+import { Works } from './pages/works/container';
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -19,7 +19,7 @@ const router = createBrowserRouter(
 			<Route errorElement={<ErrorPages />}>
 				<Route index element={<Home />} errorElement={<ErrorPages />} />
 				<Route path='/skills' element={<Skills />} errorElement={<ErrorPages />} />
-				<Route path='/works' element={<Projects />} errorElement={<ErrorPages />} />
+				<Route path='/works' element={<Works />} errorElement={<ErrorPages />} />
 			</Route>
 		</Route>,
 	),
