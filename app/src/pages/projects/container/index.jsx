@@ -3,6 +3,20 @@ import { MdArrowOutward } from 'react-icons/md';
 
 const projects = [
 	{
+		name: 'Pure Multiwarehouse E-Commerce',
+		description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt eveniet
+						sapiente nostrum animi nam expedita doloremque fugiat exercitationem obcaecati?`,
+		link: `https://github.com/purwadhikafullstack/JCWD021001`,
+		imageLink: `https://lh3.googleusercontent.com/d/1YeFUJClIoVNvnWUAtmSLYe9dhuXYamw_=w1000?authuser=0`,
+	},
+	{
+		name: 'Circle-K POS',
+		description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt eveniet
+		sapiente nostrum animi nam expedita doloremque fugiat exercitationem obcaecati?`,
+		link: `https://github.com/wllmsawi/PSS-FE`,
+		imageLink: `https://lh3.googleusercontent.com/d/1Ua4UMcuSx7m-Zso49I00Mg-nWRcuiEIz=w1000?authuser=0`,
+	},
+	{
 		name: 'Calculator',
 		description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt eveniet
 						sapiente nostrum animi nam expedita doloremque fugiat exercitationem obcaecati?`,
@@ -29,8 +43,8 @@ export const Projects = () => {
 		);
 	});
 	return (
-		<div className='flex flex-row-reverse h-full b overflow-hidden w-full'>
-			<div className='self-end w-full sm:w-8/12 max-h-[35em]  overflow-y-auto no-scrollbar'>
+		<div className='flex flex-row-reverse h-full b overflow-hidden'>
+			<div className='self-end w-full sm:w-8/12 max-h-[30em]  overflow-y-auto no-scrollbar flex flex-col gap-y-4'>
 				{renderedProjects}
 			</div>
 		</div>
