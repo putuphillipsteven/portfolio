@@ -24,7 +24,7 @@ const works = [
 export const Works = () => {
 	const renderedWorks = works?.map((work) => {
 		return (
-			<div className='flex flex-col gap-y-2' key={[work?.name]}>
+			<div className='flex flex-col gap-y-2 w-full' key={[work?.name]}>
 				<Link
 					to={`${work?.link}`}
 					target='_blank'
@@ -35,7 +35,7 @@ export const Works = () => {
 					<MdArrowOutward />
 				</Link>
 				<p className='text-justify'>{work?.description}</p>
-				<div className='w-full md:w-7/12 aspect-video border-black border-2'>
+				<div className='w-full aspect-video border-black border-2'>
 					<img src={`${work?.imageLink}`} />
 				</div>
 			</div>
@@ -43,7 +43,7 @@ export const Works = () => {
 	});
 	return (
 		<div className='flex flex-row-reverse h-full b overflow-hidden'>
-			<div className='self-end w-full sm:w-8/12 max-h-[25em] overflow-y-auto no-scrollbar flex flex-col gap-y-4'>
+			<div className='self-end w-full sm:w-6/12 max-h-[25em] overflow-y-auto no-scrollbar flex flex-col items-end gap-y-4'>
 				{renderedWorks}
 			</div>
 		</div>
