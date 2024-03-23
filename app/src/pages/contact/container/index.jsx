@@ -24,7 +24,12 @@ const contacts = [
 export const Contact = () => {
 	const renderedContact = contacts?.map((contact) => {
 		return (
-			<Link className='flex items-center gap-x-2' to={`${contact?.link}`} target='_blank'>
+			<Link
+				className='flex items-center gap-x-2'
+				to={`${contact?.link}`}
+				target='_blank'
+				key={contact?.platform}
+			>
 				<li>{contact.text}</li>
 				{contact?.icon}
 			</Link>

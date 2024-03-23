@@ -5,7 +5,7 @@ export const App = () => {
 	const linkedList = ['home', 'skills', 'works', 'contact'];
 	const linkedListElement = linkedList.map((link) => {
 		return (
-			<li>
+			<li key={link}>
 				<NavLink
 					to={`${link === 'home' ? `/` : `/${link}`}`}
 					className={({ isActive, isPending }) =>
