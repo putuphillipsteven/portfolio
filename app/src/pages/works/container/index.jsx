@@ -29,7 +29,12 @@ export const Works = () => {
 	const renderedWorks = works?.map((work) => {
 		return (
 			<div className='flex flex-col gap-y-2' key={[work?.name]}>
-				<Link to={`${work?.link}`} target='_blank' className='flex items-center gap-x-2 '>
+				<Link
+					to={`${work?.link}`}
+					target='_blank'
+					className='flex items-center gap-x-2 '
+					rel='noreferrer'
+				>
 					<h2 className='text-sm sm:text-lg border-black border-b-2  font-bold '>{work?.name}</h2>
 					<MdArrowOutward />
 				</Link>

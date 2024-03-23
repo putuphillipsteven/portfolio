@@ -25,6 +25,7 @@ export const Contact = () => {
 	const renderedContact = contacts?.map((contact) => {
 		return (
 			<Link
+				rel='noreferrer'
 				className='flex items-center gap-x-2'
 				to={`${contact?.link}`}
 				target='_blank'

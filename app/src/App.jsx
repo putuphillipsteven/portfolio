@@ -7,6 +7,7 @@ export const App = () => {
 		return (
 			<li key={link}>
 				<NavLink
+					rel='noreferrer'
 					to={`${link === 'home' ? `/` : `/${link}`}`}
 					className={({ isActive, isPending }) =>
 						isPending ? 'pending' : isActive ? 'active' : 'hover:font-bold'
