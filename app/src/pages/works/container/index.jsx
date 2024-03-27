@@ -14,6 +14,11 @@ const works = [
 		imageLink: `https://lh3.googleusercontent.com/d/1Ua4UMcuSx7m-Zso49I00Mg-nWRcuiEIz=w1000?authuser=0`,
 	},
 	{
+		name: 'WarungTiket Event Management',
+		description: `Event Management Web App like Loket.com but with very simple feature`,
+		imageLink: `https://lh3.googleusercontent.com/d/1H46bh2iJzbWWOnrG3TBOZm2mfWRvD-4t=w1000?authuser=0`,
+	},
+	{
 		name: 'Calculator',
 		description: `Simple calculator app`,
 		link: `https://putuphillipsteven.github.io/calculator/`,
