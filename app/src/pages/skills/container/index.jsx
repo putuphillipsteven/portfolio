@@ -1,6 +1,6 @@
 export const Skills = () => {
 	const skills = [
-		{ name: 'Front End', listOfSkills: ['HTML', 'CSS', 'SASS', 'Javascript', 'React'] },
+		{ name: 'Front End', listOfSkills: ['HTML', 'CSS', 'SASS', 'Javascript', 'React', 'Next'] },
 		{ name: 'Back End', listOfSkills: ['MySQL', 'Node.Js', 'Express.Js'] },
 		{ name: 'Tools', listOfSkills: ['Git', 'VSCode'] },
 	];
