@@ -13,7 +13,7 @@ const works = [
 		name: 'Circle-K POS',
 		description: `Point Of Sales Web App that similar to the Circle-K design. In this app, we can manage our products, reports, and transactions`,
 		techStacks: [`Typescript`, `My Sql`, `React`, `Express`, `Node`, `Sequelize`, `Chakra UI`],
-		link: `https://github.com/putuphillipsteven/PSS-FE.git`,
+		link: `https://github.com/putuphillipsteven/blp-fe`,
 		imageLink: `https://lh3.googleusercontent.com/d/1Ua4UMcuSx7m-Zso49I00Mg-nWRcuiEIz=w1000?authuser=0`,
 	},
 	{
