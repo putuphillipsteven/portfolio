@@ -28,7 +28,7 @@ const works = [
 		description: `Simple calculator app`,
 		techStacks: [`HTML`, `CSS`, `Javascript`],
 		link: `https://putuphillipsteven.github.io/calculator/`,
-		imageLink: `https://lh3.googleusercontent.com/d/1QJCZelGz5PDW9UZM58UVEJkglZkjLUnq=w1000?authuser=0`,
+		imageLink: `https://drive.google.com/file/d/1rHvrz_ATxJTG1zBiCYtR9d3HEVkJKeT_/view?usp=drive_link`,
 	},
 ];
 
