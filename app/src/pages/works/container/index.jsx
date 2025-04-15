@@ -25,10 +25,11 @@ const works = [
 	},
 	{
 		name: 'Calculator',
+		alt: 'Calculator Image Thumbnail',
 		description: `Simple calculator app`,
 		techStacks: [`HTML`, `CSS`, `Javascript`],
 		link: `https://putuphillipsteven.github.io/calculator/`,
-		imageLink: `https://drive.google.com/file/d/1rHvrz_ATxJTG1zBiCYtR9d3HEVkJKeT_/view?usp=drive_link`,
+		src : `./src/assets/Calculator_Portfolio_Thumbnail.jpg`
 	},
 ];
 
@@ -36,13 +37,14 @@ export const Works = () => {
 	const renderedWorks = works?.map((work) => {
 		const renderedTechStacks = work?.techStacks?.map((tech) => {
 			return (
-				<div className=' bg-black rounded-lg text-white px-2 py-1'>
+				<div className=' bg-black rounded-lg text-white px-2 py-1' key={work?.id}>
 					<p className='text-xs'>{tech}</p>
 				</div>
 			);
 		});
 		return (
 			<div className='flex flex-col gap-y-2 w-full justify-between' key={[work?.name]}>
+				<img src=""/>
 				<Link
 					to={`${work?.link}`}
 					target='_blank'
@@ -50,11 +52,11 @@ export const Works = () => {
 					rel='noreferrer'
 				>
 					<h2 className='text-sm sm:text-lg border-black border-b-2  font-bold '>{work?.name}</h2>
-					<MdArrowOutward />
+					<MdArrowOutward/>
 				</Link>
 				<p className='text-justify'>{work?.description}</p>
 				<div className='w-full aspect-video border-black border-2'>
-					<img src={`${work?.imageLink}`} />
+					<img src={`${work?.src}`} alt={work?.alt} className='aspect-video' />
 				</div>
 				<div className='flex flex-wrap lg:grid-cols-3 gap-1'>{renderedTechStacks}</div>
 			</div>
