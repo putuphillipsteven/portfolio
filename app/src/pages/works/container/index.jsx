@@ -55,8 +55,9 @@ export const Works = () => {
 					<MdArrowOutward/>
 				</Link>
 				<p className='text-justify'>{work?.description}</p>
-				<div className='w-full aspect-video border-black border-2'>
-					<img src={`${work?.src}`} alt={work?.alt} className='aspect-video' />
+				<div className='w-full h-fit border-black border-2 p-2'>
+					<p className='text-xs'>I'm sorry, those are for the thumbnail, but I think drive change their ways to load it.</p>
+					{/*<img src={`${work?.src}`} alt={work?.alt} className='aspect-video' />*/}
 				</div>
 				<div className='flex flex-wrap lg:grid-cols-3 gap-1'>{renderedTechStacks}</div>
 			</div>
