@@ -3,7 +3,7 @@ import { MdArrowOutward } from 'react-icons/md';
 
 const works = [
 	{
-		name: 'Pure Multiwarehouse E-Commerce',
+		name: 'Pure Multi Warehouse E-Commerce',
 		description: `A Web App for companies like Uniqlo that has many warehouse. In this app, we can manage our users, warehouses, products, stocks, reports, and transactions.`,
 		techStacks: [`Javascript`, `My Sql`, `React`, `Express`, `Node`, `Sequelize`, `Chakra UI`],
 		link: `https://github.com/putuphillipsteven/pure/tree/development`,
@@ -43,8 +43,8 @@ export const Works = () => {
 			);
 		});
 		return (
-			<div className='flex flex-col gap-y-2 w-full justify-between' key={[work?.name]}>
-				<img src=""/>
+			<div className='flex flex-col gap-y-2 w-full justify-between' key={work?.name}>
+
 				<Link
 					to={`${work?.link}`}
 					target='_blank'
@@ -56,7 +56,7 @@ export const Works = () => {
 				</Link>
 				<p className='text-justify'>{work?.description}</p>
 				<div className='w-full h-fit border-black border-2 p-2'>
-					<p className='text-xs'>I'm sorry, those are for the thumbnail, but I think drive change their ways to load it.</p>
+					<p className='text-xs'>I&apos;m sorry, those are for the thumbnail, but I think drive change their ways to load it.</p>
 					{/*<img src={`${work?.src}`} alt={work?.alt} className='aspect-video' />*/}
 				</div>
 				<div className='flex flex-wrap lg:grid-cols-3 gap-1'>{renderedTechStacks}</div>
