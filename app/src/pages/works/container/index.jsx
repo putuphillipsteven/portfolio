@@ -24,14 +24,14 @@ const works = [
 		techStacks: [`Javascript`, `My Sql`, `React`, `Express`, `Node`, `Sequelize`, `Chakra UI`],
 		link: `https://github.com/putuphillipsteven/warungtiket.git`,
 		imageLink: `https://lh3.googleusercontent.com/d/1H46bh2iJzbWWOnrG3TBOZm2mfWRvD-4t=w1000?authuser=0`,
-		src : `./src/assets/WarungTiket_Portfolio_Thumbnail.jpg`
+		src : `./assets/WarungTiket_Portfolio_Thumbnail.jpg`
 	},
 	{
 		name: 'Calculator',
 		description: `Simple calculator app`,
 		techStacks: [`HTML`, `CSS`, `Javascript`],
 		link: `https://putuphillipsteven.github.io/calculator/`,
-		src : `./src/assets/Calculator_Portfolio_Thumbnail.jpg`
+		src : `./assets/Calculator_Portfolio_Thumbnail.jpg`
 	},
 ];
 
