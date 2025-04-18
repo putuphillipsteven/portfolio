@@ -8,14 +8,16 @@ const works = [
 		techStacks: [`Javascript`, `My Sql`, `React`, `Express`, `Node`, `Sequelize`, `Chakra UI`],
 		link: `https://github.com/putuphillipsteven/pure/tree/development`,
 		imageLink: `https://lh3.googleusercontent.com/d/1YeFUJClIoVNvnWUAtmSLYe9dhuXYamw_=w1000?authuser=0`,
+		src : `./assets/Pure_Portfolio_Thumbnail.jpg`,
+		deprecatedForAWhile: false
 	},
 	{
-		name: 'Circle-K POS',
+		name: 'Point of Sales',
 		description: `Point Of Sales Web App that similar to the Circle-K design. In this app, we can manage our products, reports, and transactions`,
 		techStacks: [`Typescript`, `My Sql`, `React`, `Express`, `Node`, `Sequelize`, `Chakra UI`],
 		link: `https://github.com/putuphillipsteven/blp-fe`,
 		imageLink: `https://lh3.googleusercontent.com/d/1Ua4UMcuSx7m-Zso49I00Mg-nWRcuiEIz=w1000?authuser=0`,
-
+		deprecatedForAWhile: true
 	}
 	,
 	{
@@ -24,14 +26,17 @@ const works = [
 		techStacks: [`Javascript`, `My Sql`, `React`, `Express`, `Node`, `Sequelize`, `Chakra UI`],
 		link: `https://github.com/putuphillipsteven/warungtiket.git`,
 		imageLink: `https://lh3.googleusercontent.com/d/1H46bh2iJzbWWOnrG3TBOZm2mfWRvD-4t=w1000?authuser=0`,
-		src : `./assets/WarungTiket_Portfolio_Thumbnail.jpg`
+		src : `./assets/WarungTiket_Portfolio_Thumbnail.jpg`,
+		deprecatedForAWhile: false
+
 	},
 	{
 		name: 'Calculator',
 		description: `Simple calculator app`,
 		techStacks: [`HTML`, `CSS`, `Javascript`],
 		link: `https://putuphillipsteven.github.io/calculator/`,
-		src : `./assets/Calculator_Portfolio_Thumbnail.jpg`
+		src : `./assets/Calculator_Portfolio_Thumbnail.jpg`,
+		deprecatedForAWhile: false
 	},
 ];
 
@@ -45,7 +50,7 @@ export const Works = () => {
 			);
 		});
 		return (
-			<div className='flex flex-col gap-y-2 w-full justify-between' key={work?.name}>
+			!work?.deprecatedForAWhile && <div className='flex flex-col gap-y-2 w-full justify-between' key={work?.name}>
 
 				<Link
 					to={`${work?.link}`}
