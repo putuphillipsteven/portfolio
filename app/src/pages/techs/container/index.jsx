@@ -1,4 +1,4 @@
-export const Skills = () => {
+export const Techs = () => {
 	const skills = [
 		{ name: 'Front End', listOfSkills: ['HTML', 'CSS', 'SASS', 'Javascript', 'React', 'Next'] },
 		{ name: 'Back End', listOfSkills: ['MySQL', 'Node.Js', 'Express.Js'] },

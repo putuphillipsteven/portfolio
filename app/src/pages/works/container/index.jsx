@@ -15,17 +15,19 @@ const works = [
 		techStacks: [`Typescript`, `My Sql`, `React`, `Express`, `Node`, `Sequelize`, `Chakra UI`],
 		link: `https://github.com/putuphillipsteven/blp-fe`,
 		imageLink: `https://lh3.googleusercontent.com/d/1Ua4UMcuSx7m-Zso49I00Mg-nWRcuiEIz=w1000?authuser=0`,
-	},
+
+	}
+	,
 	{
 		name: 'WarungTiket Event Management',
 		description: `Event Management Web App like Loket.com but with very simple feature. This app give us feature like create an event, and buying tickets`,
 		techStacks: [`Javascript`, `My Sql`, `React`, `Express`, `Node`, `Sequelize`, `Chakra UI`],
 		link: `https://github.com/putuphillipsteven/warungtiket.git`,
 		imageLink: `https://lh3.googleusercontent.com/d/1H46bh2iJzbWWOnrG3TBOZm2mfWRvD-4t=w1000?authuser=0`,
+		src : `./src/assets/WarungTiket_Portfolio_Thumbnail.jpg`
 	},
 	{
 		name: 'Calculator',
-		alt: 'Calculator Image Thumbnail',
 		description: `Simple calculator app`,
 		techStacks: [`HTML`, `CSS`, `Javascript`],
 		link: `https://putuphillipsteven.github.io/calculator/`,
@@ -55,9 +57,9 @@ export const Works = () => {
 					<MdArrowOutward/>
 				</Link>
 				<p className='text-justify'>{work?.description}</p>
-				<div className='w-full h-fit border-black border-2 p-2'>
-					<p className='text-xs'>I&apos;m sorry, those are for the thumbnail, but I think drive change their ways to load it.</p>
-					{/*<img src={`${work?.src}`} alt={work?.alt} className='aspect-video' />*/}
+				<div className='w-full h-fit border-black border-2 p-1'>
+					{/*<p className='text-xs'>I&apos;m sorry, those are for the thumbnail, but I think drive change their ways to load it.</p>*/}
+					<img src={`${work?.src}`} alt={`${work?.name} Thumbnail Image`} className='aspect-video' />
 				</div>
 				<div className='flex flex-wrap lg:grid-cols-3 gap-1'>{renderedTechStacks}</div>
 			</div>
